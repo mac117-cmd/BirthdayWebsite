@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6efe1">
+    <title>Sanju's Birthday Countdown</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Bungee+Shade&family=Nunito:wght@500;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" as="image" href="assets/sanju-photo.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="page">
+      <canvas class="fireworks-canvas" id="fireworksCanvas" aria-hidden="true"></canvas>
+      <div class="petal-field" id="petalField" aria-hidden="true"></div>
+
+      <main class="poster" aria-live="polite">
+        <div class="disco-ball" aria-hidden="true"></div>
+        <div class="paper-flower" aria-hidden="true"></div>
+        <div class="paper-star star-one" aria-hidden="true"></div>
+        <div class="paper-star star-two" aria-hidden="true"></div>
+        <div class="kiss-print" aria-hidden="true"></div>
+
+        <section class="portrait-scene" aria-label="Sanju's birthday portrait">
+          <div class="photo-cutout">
+            <img src="assets/sanju-photo.png" alt="Sanju smiling">
+            <span class="party-hat" aria-hidden="true"></span>
+          </div>
+          <div class="mocktail" aria-hidden="true">
+            <span></span>
+          </div>
+          <div class="date-number" aria-hidden="true">03</div>
+        </section>
+
+        <section class="intro">
+          <p class="eyebrow">03 July 2026 - 12:00 AM IST</p>
+          <h1 id="headline">Sanju's midnight party</h1>
+          <p class="subline" id="subline">A tiny handmade countdown, waiting to turn into her birthday wish.</p>
+          <div class="ransom-title" aria-hidden="true">
+            <span>B</span><span>I</span><span>R</span><span>T</span><span>H</span><span>D</span><span>A</span><span>Y</span>
+            <span>P</span><span>A</span><span>R</span><span>T</span><span>Y</span>
+          </div>
+        </section>
+
+        <section class="countdown" id="countdown" aria-label="Countdown to Sanju's birthday">
+          <div class="time-tile">
+            <span id="days">00</span>
+            <small>Days</small>
+          </div>
+          <div class="time-tile">
+            <span id="hours">00</span>
+            <small>Hours</small>
+          </div>
+          <div class="time-tile">
+            <span id="minutes">00</span>
+            <small>Minutes</small>
+          </div>
+          <div class="time-tile">
+            <span id="seconds">00</span>
+            <small>Seconds</small>
+          </div>
+        </section>
+
+        <section class="wish" id="wish" hidden>
+          <p class="wish-kicker">The wait is over</p>
+          <h2>Happy Birthday, Sanju</h2>
+          <p class="quote">May this new year of your life bloom like a midnight garden - bright with dreams, soft with love, and filled with moments that make your heart smile.</p>
+          <div class="flower-line" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </section>
+
+        <div class="actions">
+          <button class="notify-button" id="notifyButton" type="button">
+            <span class="bell" aria-hidden="true"></span>
+            <span>Enable midnight reminder</span>
+          </button>
+          <p class="notify-status" id="notifyStatus" role="status"></p>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
